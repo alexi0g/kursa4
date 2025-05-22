@@ -363,4 +363,32 @@ ul {
     .widget ul {
         padding: 10px 15px;
     }
+
+    .post {
+        padding: 17px; /* Немного уменьшаем отступы */
+    }
+    
+    .post p {
+        font-size: 1em; /* Уменьшаем основной текст */
+        line-height: 1.4; /* Улучшаем читаемость */
+    }
+    
+    .post h3 {
+        font-size: 1.2em; /* Уменьшаем заголовки h3 */
+    }
+    
+    .post h4 {
+        font-size: 1.1em; /* Уменьшаем заголовки h4 */
+    }
+    
+    .post-meta {
+        font-size: 0.8em; /* Уменьшаем мета-информацию */
+    }
+
+    @media (max-width: 414px) {
+        .post-meta {
+            font-size: 0.7em;
+            gap: 5px; 
+        }
+    }
 }
