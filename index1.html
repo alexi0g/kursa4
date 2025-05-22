@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="header-content">
+            <h1>tp.ru</h1>
+            <p class="header2text">Ещё один сайт на WordPress</p>
+            <img class="img" src="images/Header.jpg" alt="header">
+        </div>
+        <div class="header-buttons">
+            <form style="display: inline" action="index1.html" method="get">
+                <button type="submit" class="mainpagebutton">Главная</button>
+            </form>
+            <form style="display: inline" action="index2.html" method="get">
+                <button type="submit" class="examplepagebutton">Пример страницы</button>
+            </form>
+        </div>
+    </header>
+    <div class="widgetsearchmobile">
+        <form class="search-form">
+            <input type="search" class="search" placeholder="Поиск...">
+            <button type="submit" class="search-button">Поиск</button>
+        </form>
+    </div>
+    <aside class="left-sidebar">
+        <div class="widgetsearch">
+            <form class="search-form">
+                <input type="search" class="search">
+                <button type="submit" class="search-button">Поиск</button>
+            </form>
+        </div>
+        <div class="widget">
+            <div class="widget-header">
+                <img src="images/BlockHeaderIcon.png" class="header-icon" alt="headericon">
+                <h3>Свежие записи</h3>
+            </div>
+            <ul>
+                <li><a href="#">Привет, мир!</a></li>
+            </ul>
+        </div>
+
+        <div class="widget">
+            <div class="widget-header">
+                <img src="images/BlockHeaderIcon.png" class="header-icon" alt="headericon">
+                <h3>Свежие комментарии</h3>
+            </div>
+            <ul>
+                <li><a href="#">Мистер WordPress</a> к записи <a href="#">Привет, мир!</a></li>
+            </ul>
+        </div>
+
+
+        <div class="widget">
+            <div class="widget-header">
+                <img src="images/BlockHeaderIcon.png" class="header-icon" alt="headericon">
+                <h3>Архивы</h3>
+            </div>
+            <ul>
+                <li><a href="#">Февраль 2013</a></li>
+            </ul>
+        </div>
+
+        <div class="widget">
+            <div class="widget-header">
+                <img src="images/BlockHeaderIcon.png" class="header-icon" alt="headericon">
+                <h3>Мета</h3>
+            </div>
+            <ul>
+                <li><a href="#">Управление сайтом</a></li>
+                <li><a href="#">Выйти</a></li>
+                <li><a href="#">RSS записей</a></li>
+                <li><a href="#">RSS комментариев</a></li>
+                <li><a href="#">WordPress.org</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        <article class ="post">
+            <h2>Привет, мир!</h2>
+            <div class="post-meta">
+                Февраль 24th, 2013 | <img src="images/PostAuthorIcon.png" alt="PostAuthorIcon"> Автор: <a href="#" class="meta-link">admin</a> | <a href="#" class="meta-link">Править</a>
+            </div>
+            <p>Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!</p>
+            <div class="post-meta">
+                Опубликовано в рубрике <a href="#">Без рубрики</a> | <a href="#">1 комментарий »</a>
+            </div>
+        </article>
+    </main>
+
+    <aside class="right-sidebar">
+        <div class="widget">
+            <div class="widget-header">
+            <img src="images/BlockHeaderIcon.png" class="header-icon" alt="headericon">
+            <h3>Рубрики</h3>
+            </div>
+            <ul>
+                <li><a href="#">Без рубрики</a> (1)</li>
+            </ul>
+        </div>
+        <div class = "right-sidebar content">
+            Спасибо: <a href="#">Лестницы</a> Поддержка: <a href="#">Капитальное строительство</a>
+        </div>
+    </aside>
+
+    <footer>
+        <img src="images/rssIcon.png" alt="Логотип" style="height: 50px;">
+        <div>
+            <p>Все права защищены. <a href="#">tp.ru</a></p>
+            <a href="#" class="footermeta">Хостинг для Wordpress сайтов</a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

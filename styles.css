@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "left main right"
+        "footer footer footer";
+    min-height: 100vh;
+    border: 3px solid #769db2;
+    border-radius: 15px;
+}
+header {
+    grid-area: header;
+    padding-bottom: 0; 
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header h1{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+header img {
+    width: 100%;
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+}
+
+.header2text{
+    color: #666;
+}
+
+.headerimage{
+    text-align:center;
+}
+
+.header-buttons {
+    margin-top: 10px; 
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.examplepagebutton, .mainpagebutton {
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 25px;
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1;
+    white-space: nowrap;
+    background-color: #2869bb;
+    border: 1px solid #ffffff;
+    color: #eee;
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.examplepagebutton:hover, 
+.mainpagebutton:hover {
+    background-color: #3a9de4; 
+    border-color: #ffffff;
+    color: #002d50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-sidebar {
+    grid-area: left;
+    padding-right: 20px;
+}
+main {
+    grid-area: main;
+}
+.right-sidebar {
+    grid-area: right;
+    padding-left: 20px;
+}
+
+.right-sidebar .content p {
+    margin: 10px 0;
+}
+
+
+footer {
+    grid-area: footer;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #000000;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+footer a {
+    color: #658cb9;
+    font-weight: bold;
+}
+
+.img{
+    margin-top: 0px;
+}
+.widget {
+    border: 1px solid rgb(182, 182, 182);
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.widget-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    margin-top: 1px;
+    background-image: url('images/BlockHeader.png');
+    background-size: calc(100% - 5px) calc(100% - 5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 15px;
+    font-size: 10px;
+
+}
+
+.header-icon {
+    margin-top: 2px;
+    height: 35px;
+    width: auto;
+}
+
+.widget-header h3 {
+    margin: 0;
+    line-height: 1;
+}
+
+.widget h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.widget ul {
+    color: #61676a;
+    padding: 10px;
+    margin: 10px;
+    list-style: url(images/BlockContentBullets.png);
+}
+
+.widget li a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.widget li a:hover {
+    text-decoration: underline;
+    color: #5b5f68;
+}
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+.widgetsearch{
+    border: 1px solid rgb(182, 182, 182);
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 118px;
+}
+.search-form input[type="search"] {
+    padding: 4px 8px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 17px auto 0;
+    align-items: center;
+    height: 20px;
+}
+
+.search {
+    width: 75%;
+    border: 0px;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    line-height: 20px;
+}
+
+.search-button {
+    background-color: #33a1dc;
+    width: 100px;
+    height: 20px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #2c5885;
+    cursor: pointer;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+    color: #fff;
+}
+
+.search-button {
+    padding: 8px 15px;
+    width: 35%;
+    min-height: 36px;
+    border: 1px solid #2c5885;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    background-image: url(images/BlockHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-size: auto;
+    margin-top: 25px;
+    color: #fff;
+}
+.search-button:hover {
+    background: #e0e0e0;
+}
+
+.post {
+    grid-column: 1/-1;
+    width: 100%;
+    margin-bottom: 0; /* Убираем отступ */
+    border: 2px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+}
+
+.post p,h3,h4 {
+    margin-top: 10px;    /* Отступ сверху */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    gap: 5px; /* Расстояние между элементами */
+}
+
+.post-meta img {
+    vertical-align: middle; /* Центрирование по вертикали */
+    margin: 0 2px; /* Небольшие отступы вокруг иконки */
+    width: auto;
+}
+
+.post-meta .meta-link {
+    color: #000000;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+
+/* Скрываем мобильный поиск по умолчанию */
+.widgetsearchmobile {
+    display: none;
+}
+
+/* Мобильная версия (меньше 992px) */
+@media (max-width: 992px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "search"
+            "main"
+            "left"
+            "right"
+            "footer";
+        gap: 15px; /* Добавляем отступы между элементами */
+    }
+
+    /* Общие стили для всех виджетов */
+    .left-sidebar, .right-sidebar {
+        width: 100%;
+        padding: 0 15px; /* Боковые отступы */
+        box-sizing: border-box;
+    }
+
+    /* Стили для виджетов */
+    .widget {
+        width: 100%;
+        margin-bottom: 15px; /* Отступ между виджетами */
+    }
+
+    /* Мобильный поиск */
+    .widgetsearchmobile {
+        display: block;
+        grid-area: search;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+    .widgetsearchmobile .search-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .widgetsearchmobile .search {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* Скрываем десктопный поиск */
+    .left-sidebar .widgetsearch {
+        display: none;
+    }
+
+    /* Выравнивание заголовков виджетов */
+    .widget-header {
+        padding: 8px 15px; /* Увеличиваем отступы */
+    }
+
+    /* Контент внутри виджетов */
+    .widget ul {
+        padding: 10px 15px;
+    }
+}
