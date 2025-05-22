@@ -313,7 +313,7 @@ ul {
     /* Общие стили для всех виджетов */
     .left-sidebar, .right-sidebar {
         width: 100%;
-        padding: 0 15px; /* Боковые отступы */
+        padding: 0 15px;
         box-sizing: border-box;
     }
 
@@ -327,14 +327,20 @@ ul {
     .widgetsearchmobile {
         display: block;
         grid-area: search;
-        padding: 0 15px;
-        margin-bottom: 20px;
+        border: 1px solid rgb(182, 182, 182);
+        margin-bottom: 5px;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        min-height: 118px;
     }
 
     .widgetsearchmobile .search-form {
         display: flex;
         flex-direction: column;
     }
+
+
 
     .widgetsearchmobile .search {
         width: 100%;
