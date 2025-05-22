@@ -219,20 +219,6 @@ footer a {
 }
 
 .search-button {
-    background-color: #33a1dc;
-    width: 100px;
-    height: 20px;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 1px solid #2c5885;
-    cursor: pointer;
-    margin-left: 20px;
-    overflow: hidden;
-    margin-top: 25px;
-    color: #fff;
-}
-
-.search-button {
     padding: 8px 15px;
     width: 35%;
     min-height: 36px;
@@ -240,17 +226,27 @@ footer a {
     border-radius: 10px;
     cursor: pointer;
     margin-left: 20px;
-    background-image: url(images/BlockHeader.png);
+    background-color: #359fdb; /* Основной цвет как у кнопок в хедере */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    background-size: auto;
     margin-top: 25px;
-    color: #fff;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1;
+    white-space: nowrap;
+    transition: all 0.3s ease; /* Плавный переход */
 }
+
 .search-button:hover {
-    background: #e0e0e0;
+    background-color: #3a9de4; /* Цвет при наведении */
+    border-color: #ffffff;
+    color: #002d50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень при наведении */
 }
 
 .post {
@@ -311,7 +307,7 @@ ul {
             "left"
             "right"
             "footer";
-        gap: 15px; /* Добавляем отступы между элементами */
+        gap: 10px; /* Добавляем отступы между элементами */
     }
 
     /* Общие стили для всех виджетов */
