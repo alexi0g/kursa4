@@ -8,6 +8,10 @@
     {
       "src": "*.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "images/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -26,6 +30,10 @@
     {
       "src": "(.*).css",
       "dest": "$1.css"
+    },
+    {
+      "src": "images/(.*)",
+      "dest": "images/$1"
     }
   ]
 }
