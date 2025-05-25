@@ -252,7 +252,7 @@ footer a {
 .post {
     grid-column: 1/-1;
     width: 100%;
-    margin-bottom: 0; /* Убираем отступ */
+    margin-bottom: 10px; /* Убираем отступ */
     border: 2px solid #c1c1c1;
     border-radius: 10px;
     padding: 20px;
@@ -290,6 +290,10 @@ ul {
     list-style-type: none;
 }
 
+.welcome{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 /* Скрываем мобильный поиск по умолчанию */
 .widgetsearchmobile {
