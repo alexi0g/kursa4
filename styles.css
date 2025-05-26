@@ -43,8 +43,8 @@ header h1{
 
 header img {
     width: 100%;
-    height: auto; /* Сохраняет пропорции */
-    display: block; /* Убирает лишние отступы */
+    height: auto; 
+    display: block; 
 }
 
 .header2text{
@@ -266,6 +266,13 @@ footer a {
     margin-bottom: 10px; /* Отступ снизу */
 }
 
+.post-image {
+    width: 250px;      
+    height: auto;       
+    max-width: 100%;    
+    float: left;        
+    margin: 0 15px 15px 0;
+}
 .post-meta {
     color: #666;
     font-size: 0.9em;
@@ -300,7 +307,6 @@ ul {
     display: none;
 }
 
-/* Мобильная версия (меньше 992px) */
 @media (max-width: 992px) {
     .wrapper {
         grid-template-columns: 1fr;
@@ -311,23 +317,20 @@ ul {
             "left"
             "right"
             "footer";
-        gap: 10px; /* Добавляем отступы между элементами */
+        gap: 10px;
     }
 
-    /* Общие стили для всех виджетов */
     .left-sidebar, .right-sidebar {
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
     }
 
-    /* Стили для виджетов */
     .widget {
         width: 100%;
-        margin-bottom: 15px; /* Отступ между виджетами */
+        margin-bottom: 15px;
     }
 
-    /* Мобильный поиск */
     .widgetsearchmobile {
         display: block;
         grid-area: search;
@@ -353,40 +356,37 @@ ul {
         margin-bottom: 10px;
     }
 
-    /* Скрываем десктопный поиск */
     .left-sidebar .widgetsearch {
         display: none;
     }
 
-    /* Выравнивание заголовков виджетов */
     .widget-header {
-        padding: 8px 15px; /* Увеличиваем отступы */
+        padding: 8px 15px; 
     }
 
-    /* Контент внутри виджетов */
     .widget ul {
         padding: 10px 15px;
     }
 
     .post {
-        padding: 17px; /* Немного уменьшаем отступы */
+        padding: 17px;
     }
     
     .post p {
-        font-size: 1em; /* Уменьшаем основной текст */
-        line-height: 1.4; /* Улучшаем читаемость */
+        font-size: 1em;
+        line-height: 1.4; 
     }
     
     .post h3 {
-        font-size: 1.2em; /* Уменьшаем заголовки h3 */
+        font-size: 1.2em;
     }
     
     .post h4 {
-        font-size: 1.1em; /* Уменьшаем заголовки h4 */
+        font-size: 1.1em;
     }
     
     .post-meta {
-        font-size: 0.8em; /* Уменьшаем мета-информацию */
+        font-size: 0.8em;
     }
 
     @media (max-width: 414px) {
@@ -396,3 +396,5 @@ ul {
         }
     }
 }
+
+
